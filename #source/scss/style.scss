@@ -750,8 +750,7 @@ body.lock {
 
 .offer {
 	position: absolute;
-	
-	
+
 	color: #f1ac11;
 	width: 100px;
 	bottom: 60px;
@@ -776,17 +775,15 @@ body.lock {
 
 .prev-offer {
 	left: 100px;
-	
+
 	&::after {
 		transform: rotate(180deg);
 		left: -30px;
 	}
 }
 .next-offer {
-	
 	right: 100px;
 }
-
 
 @media (max-width: 860px) {
 	.online__body {
@@ -814,9 +811,7 @@ body.lock {
 	}
 }
 
-
 .adress {
-
 	position: relative;
 	padding: 80px 10px;
 	img {
@@ -832,13 +827,13 @@ body.lock {
 		max-width: 570px;
 		margin: 0px auto;
 		padding: 60px 50px;
-		
+
 		background: radial-gradient(circle at top left, transparent 30px, #fff 0) top left,
-		radial-gradient(circle at top right, transparent 30px, #fff 0) top right,
-		radial-gradient(circle at bottom right, transparent 30px, #fff 0) bottom right,
-		radial-gradient(circle at bottom left, transparent 30px, #fff 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
+			radial-gradient(circle at top right, transparent 30px, #fff 0) top right,
+			radial-gradient(circle at bottom right, transparent 30px, #fff 0) bottom right,
+			radial-gradient(circle at bottom left, transparent 30px, #fff 0) bottom left;
+		background-size: 50% 50%;
+		background-repeat: no-repeat;
 	}
 
 	&__title {
@@ -859,7 +854,6 @@ body.lock {
 		flex: 1 1 50%;
 		display: flex;
 		align-items: center;
-		
 	}
 	&__logo {
 		font-size: 22px;
@@ -871,7 +865,7 @@ body.lock {
 			margin-right: 10px;
 		}
 	}
-	&__adress{
+	&__adress {
 		display: flex;
 		align-items: center;
 		font-style: italic;
@@ -879,7 +873,7 @@ body.lock {
 		letter-spacing: 0.9px;
 		font-weight: bold;
 		padding-left: 20px;
-	} 
+	}
 
 	&__button {
 		width: 150px;
@@ -890,22 +884,19 @@ body.lock {
 }
 
 @media (max-width: 860px) {
-
 	.adress__block {
 		padding: 30px 50px;
 	}
 	.adress__title {
 		font-size: 18px;
-		padding-bottom: 15px;	
+		padding-bottom: 15px;
 	}
 	.adress__logo {
 		font-size: 16px;
-		
 	}
 	.adress__body {
 		flex-wrap: wrap;
 		text-align: center;
-			
 	}
 	.svg {
 		width: 30px;
@@ -918,22 +909,142 @@ body.lock {
 	.adress__adress {
 		font-size: 12px;
 		padding-left: 10px;
-		
 	}
 
 	.adress__button {
-		font-size: 12px;	
+		font-size: 12px;
 		margin-top: 20px;
 	}
-
 }
 @media (max-width: 515px) {
 	.adress__item {
 		flex: 0 0 100%;
 		padding-bottom: 15px;
-		justify-content: center;	
+		justify-content: center;
 	}
-	.adress__button {	
+	.adress__button {
 		margin-top: 10px;
+	}
+}
+
+.footer {
+	padding: 80px 15px;
+	position: relative;
+	img {
+		position: absolute;
+		object-fit: cover;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1	;
+	}
+	&__body {
+		display: flex;
+	}
+
+	&__item {
+		flex: 0 0 50%;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-style: italic;
+		font-size: 22px;
+		letter-spacing: 1.1px;
+		color: #fff;
+		padding-bottom: 30px;
+	}
+
+	&__list {
+		display: block;
+		text-transform: uppercase;
+		font-style: italic;
+		font-size: 17px;
+		letter-spacing: 0.85px;
+		color: #bbbbbb;
+		padding: 0px 0 5px 0px;
+		
+	}
+
+	&__form {
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__input {
+		
+		background: rgba(255, 255, 255, 0.4);
+		
+		padding: 10px 10px;
+		width: 230px;
+		height: 32px;
+		color:#fff;
+		text-transform: uppercase;
+		font-style: italic;
+		&::placeholder {
+			color: #fff;
+		}
+		&:focus::placeholder{
+			opacity: 0;
+		}
+	}
+	
+
+	&__button {
+		display: inline-block;
+		width: 90px;
+		height: 32px;
+		margin-left: 40px;
+	}
+}
+
+.item {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -20px;
+		overflow: hidden;
+	}
+
+	&__item {
+		padding: 0 20px;
+	}
+}
+
+
+.newstler {
+	text-align: center;
+}
+
+@media (max-width: 950px) {
+	.footer__body {
+		flex-direction: column;
+	}
+	.footer__item {
+		flex: 0 0 100%;
+	}
+}
+
+@media (max-width: 515px) {
+	.item__body {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		text-align: center;
+	}
+	.item__item {
+		padding-bottom: 20px;
+	}
+	.footer__form {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.footer__input {
+		margin-bottom: 15px;
+	}
+	.footer__button {
+		margin-left: 0;
 	}
 }
