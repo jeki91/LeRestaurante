@@ -1021,9 +1021,11 @@ body.lock {
 @media (max-width: 950px) {
 	.footer__body {
 		flex-direction: column;
+		
 	}
 	.footer__item {
 		flex: 0 0 100%;
+		padding-bottom: 30px;
 	}
 }
 
@@ -1046,5 +1048,8 @@ body.lock {
 	}
 	.footer__button {
 		margin-left: 0;
+	}
+	.footer {
+		padding-bottom: 20px;
 	}
 }
