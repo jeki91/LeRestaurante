@@ -97,14 +97,14 @@
 
 			<div class="vegan">
 				<label>
-					<input type="checkbox" class="checkbox">
+					<input type="checkbox" class="checkbox" id="vegan-chbox" onchange="checkbox()">
 					<span class="checkbox-active"></span>
 					<span>show vegan menu only</span>
 				</label>
 			</div>
 
 			<div class="menu__menu">
-				<div class="menu__item">
+				<div class="menu__item" data-cat="all">
 					<div class="menu__body">
 						<div class="menu__image">
 							<img src="image/menu/item1.png" alt="">
@@ -123,7 +123,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="menu__item">
+				<div class="menu__item" data-cat="all">
 					<div class="menu__body">
 						<div class="menu__image">
 							<img src="image/menu/2.png" alt="">
@@ -142,7 +142,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="menu__item">
+				<div class="menu__item" data-cat="vegan">
 					<div class="menu__body">
 						<div class="menu__image">
 							<img src="image/menu/3.png" alt="">
@@ -161,7 +161,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="menu__item">
+				<div class="menu__item" data-cat="all">
 					<div class="menu__body">
 						<div class="menu__image">
 							<img src="image/menu/4.png" alt="">
@@ -180,7 +180,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="menu__item">
+				<div class="menu__item" data-cat="vegan">
 					<div class="menu__body">
 						<div class="menu__image">
 							<img src="image/menu/5.png" alt="">
@@ -199,7 +199,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="menu__item">
+				<div class="menu__item" data-cat="vegan">
 					<div class="menu__body">
 						<div class="menu__image">
 							<img src="image/menu/6.png" alt="">
@@ -369,7 +369,7 @@
 	<script src="js/burger.js"></script>
 	<script src="js/js.js"></script>
 	<script src="js/slider.js"></script>
-
+	<script src="js/filter.js"></script>
 </body>
 
 </html>

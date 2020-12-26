@@ -1549,6 +1549,12 @@ body.lock {
   padding: 0px 0 5px 0px;
 }
 
+.footer__list:hover {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+          transform: scale3d(1.1, 1.1, 1.1);
+  color: #fff;
+}
+
 .footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1617,12 +1623,12 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 -20px;
+  margin: 0 -15px;
   overflow: hidden;
 }
 
 .item__item {
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .newstler {
@@ -1644,6 +1650,9 @@ body.lock {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     padding-bottom: 30px;
+  }
+  .footer__list {
+    padding-bottom: 15px;
   }
 }
 

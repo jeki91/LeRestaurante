@@ -990,6 +990,10 @@ body.lock {
 		letter-spacing: 0.85px;
 		color: #bbbbbb;
 		padding: 0px 0 5px 0px;
+		&:hover {
+			transform: scale3d(1.1, 1.1, 1.1);
+			color: #fff;
+		}
 	}
 
 	&__form {
@@ -1026,12 +1030,12 @@ body.lock {
 	&__body {
 		display: flex;
 		justify-content: space-between;
-		margin: 0 -20px;
+		margin: 0 -15px;
 		overflow: hidden;
 	}
 
 	&__item {
-		padding: 0 20px;
+		padding: 0 15px;
 	}
 }
 
@@ -1049,6 +1053,9 @@ body.lock {
 	.footer__item {
 		flex: 0 0 100%;
 		padding-bottom: 30px;
+	}
+	.footer__list {
+		padding-bottom: 15px;
 	}
 }
 
