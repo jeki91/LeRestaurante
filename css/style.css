@@ -436,8 +436,8 @@ body.lock {
 .header__logo:hover {
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-  -webkit-transform: translate(5px, 5px);
-          transform: translate(5px, 5px);
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+          transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .header__menu {
@@ -737,6 +737,9 @@ body.lock {
 }
 
 @media (max-width: 1150px) {
+  .header__menu {
+    margin-left: 40px;
+  }
   .header__link {
     font-size: 14px;
     height: 50px;
@@ -895,8 +898,7 @@ body.lock {
 }
 
 .menu {
-  padding: 80px 0 10px 0px;
-  overflow: hidden;
+  padding: 80px 0 0px 0px;
 }
 
 .menu__title {
@@ -1079,6 +1081,7 @@ body.lock {
   max-width: 930px;
   padding: 0 15px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .title {
@@ -1123,6 +1126,8 @@ body.lock {
 
 .online {
   position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .online__body {
@@ -1262,12 +1267,20 @@ body.lock {
           box-shadow: 0 0 10px #b47d00;
 }
 
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0;
+}
+
 .offer {
-  position: absolute;
+  position: relative;
   color: #f1ac11;
   width: 100px;
-  bottom: 60px;
-  right: -50px;
   z-index: 1;
   text-transform: uppercase;
   font-size: 12px;
@@ -1288,7 +1301,7 @@ body.lock {
 }
 
 .prev-offer {
-  left: 100px;
+  margin-left: 100px;
 }
 
 .prev-offer::after {
@@ -1298,7 +1311,13 @@ body.lock {
 }
 
 .next-offer {
-  right: 100px;
+  margin-right: 70px;
+}
+
+.swiper-pagination {
+  display: none;
+  font-size: 12px;
+  color: #f1ac11;
 }
 
 @media (max-width: 860px) {
@@ -1316,11 +1335,17 @@ body.lock {
   .online__item:nth-child(2) {
     padding-top: 300px;
   }
+  .online__button {
+    margin: 0 auto;
+  }
   .next-offer {
     display: none;
   }
   .prev-offer {
     display: none;
+  }
+  .swiper-pagination {
+    display: block;
   }
 }
 
@@ -1421,6 +1446,9 @@ body.lock {
 }
 
 @media (max-width: 860px) {
+  .adress {
+    padding: 30px 10px;
+  }
   .adress__block {
     padding: 30px 50px;
   }
@@ -1597,6 +1625,9 @@ body.lock {
 }
 
 @media (max-width: 950px) {
+  .footer {
+    padding: 30px 15px;
+  }
   .footer__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
