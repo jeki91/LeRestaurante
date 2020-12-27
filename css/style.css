@@ -1641,6 +1641,11 @@ body.lock {
   position: relative;
 }
 
+.link:hover {
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
 .link:hover::after {
   position: absolute;
   content: "";
