@@ -1034,6 +1034,10 @@ body.lock {
   margin-left: 20px;
 }
 
+.hide {
+  display: none;
+}
+
 .checkbox {
   display: none;
 }

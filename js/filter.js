@@ -3,18 +3,16 @@ function checkbox() {
 
 	if (checkbox.checked) {
 		console.log('checked');
-		
+		$("[data-cat]").each(function () {
+			let cat = $(this).data('cat');
+
+			if (cat != 'vegan') {
+				$(this).addClass('hide');
+			}
+		});
 
 	} else {
-		console.log('no checked');
+		$("[data-cat]").removeClass('hide');
 	}
 }
 
-//let filter = $("[data-filter");
-		//console.log(filter);
-/*$("[data-cat]").each(function () {
-	let cat = $(this).data('filter');
-	if (cat != filter) {
-		$(this).addClass('hide');
-	}
-});*/
