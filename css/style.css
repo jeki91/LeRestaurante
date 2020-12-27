@@ -1543,10 +1543,6 @@ body.lock {
   padding-bottom: 30px;
 }
 
-.footer__title:hover {
-  text-decoration: underline;
-}
-
 .footer__list {
   display: block;
   text-transform: uppercase;
@@ -1637,6 +1633,14 @@ body.lock {
 
 .item__item {
   padding: 0 15px;
+}
+
+.link {
+  color: #fff;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .newstler {

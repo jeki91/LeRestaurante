@@ -982,9 +982,6 @@ body.lock {
 		letter-spacing: 1.1px;
 		color: #fff;
 		padding-bottom: 30px;
-		&:hover {
-			text-decoration: underline;
-		}
 	}
 
 	&__list {
@@ -1043,7 +1040,12 @@ body.lock {
 		padding: 0 15px;
 	}
 }
-
+.link {
+	color:#fff;
+	&:hover {
+		text-decoration: underline;
+	}
+}
 .newstler {
 	text-align: center;
 }
