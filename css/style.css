@@ -1637,10 +1637,18 @@ body.lock {
 
 .link {
   color: #fff;
+  display: inline-block;
+  position: relative;
 }
 
-.link:hover {
-  text-decoration: underline;
+.link:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 15px;
+  left: 0;
 }
 
 .newstler {
