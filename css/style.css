@@ -1543,6 +1543,10 @@ body.lock {
   padding-bottom: 30px;
 }
 
+.footer__title:hover {
+  text-decoration: underline;
+}
+
 .footer__list {
   display: block;
   text-transform: uppercase;

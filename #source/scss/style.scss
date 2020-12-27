@@ -982,6 +982,9 @@ body.lock {
 		letter-spacing: 1.1px;
 		color: #fff;
 		padding-bottom: 30px;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	&__list {
